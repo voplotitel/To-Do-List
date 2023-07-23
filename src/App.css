@@ -3,7 +3,6 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
-/* Основные стили контейнера списка дел */
 .todo-list-container {
   max-width: 400px;
   margin: 0 auto;
@@ -13,7 +12,6 @@ body {
   background: linear-gradient(135deg, #fdd835, #4caf50);
 }
 
-/* Стили контейнера для ввода нового элемента списка */
 .todo-input-container {
   display: flex;
   align-items: center;
@@ -37,7 +35,6 @@ body {
   cursor: pointer;
 }
 
-/* Стили элементов списка дел */
 .todo-items {
   list-style: none;
   padding: 0;
@@ -60,7 +57,6 @@ body {
   opacity: 0.5;
 }
 
-/* Стили кнопок "Изменить" и "Удалить" для элементов списка */
 .todo-item-actions button {
   margin-left: 10px;
   padding: 4px 8px;
@@ -78,7 +74,6 @@ body {
   color: #fff;
 }
 
-/* Добавляем анимацию при нажатии на элемент списка */
 @keyframes scaleIn {
   0% {
     transform: scale(1);
@@ -101,14 +96,12 @@ body {
   opacity: 0.5;
 }
 
-/* Добавляем стили для заголовка h1 */
 .todo-list-container h1 {
   text-align: center;
   margin-bottom: 20px;
   color: #fff;
 }
 
-/* Отменяем зачеркивание текста для кнопок "Edit" и "Delete" */
 .todo-items li .todo-item-actions button {
   text-decoration: none;
 }
