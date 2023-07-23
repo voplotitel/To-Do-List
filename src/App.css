@@ -1,0 +1,135 @@
+body {
+  background-color: #333;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Основные стили контейнера списка дел */
+.todo-list-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #fdd835, #4caf50);
+}
+
+/* Стили контейнера для ввода нового элемента списка */
+.todo-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-input-container input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+}
+
+.todo-input-container button {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Стили элементов списка дел */
+.todo-items {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-items li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 2px solid #fff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+
+.todo-items li.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* Стили кнопок "Изменить" и "Удалить" для элементов списка */
+.todo-item-actions button {
+  margin-left: 10px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-item-actions button:first-child {
+  background-color: #2196f3;
+}
+
+.todo-item-actions button:last-child {
+  background-color: #f44336;
+  color: #fff;
+}
+
+/* Добавляем анимацию при нажатии на элемент списка */
+@keyframes scaleIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.todo-items li {
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+}
+
+.todo-items li.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* Добавляем стили для заголовка h1 */
+.todo-list-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Отменяем зачеркивание текста для кнопок "Edit" и "Delete" */
+.todo-items li .todo-item-actions button {
+  text-decoration: none;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.todo-item {
+  animation: scaleIn 0.3s ease;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
